@@ -230,13 +230,13 @@ const getStoredProcedureD = async (connection) => {
   });
 
   storedProcedures2.forEach((stored) => {
-    const { name, parsedStored, noWhite, raw } = parsed(
+    const { name,  noWhite, raw } = parsed(
       stored.ROUTINE_DEFINITION
     );
 
     if (name === "dbo") return;
 
-    stored2.set(name, { parsedStored, noWhite, raw });
+    stored2.set(name, {  noWhite, raw });
   });
 
   const db1StoredProceduresNamesDifference = [];
