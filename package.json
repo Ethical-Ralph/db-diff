@@ -1,0 +1,36 @@
+{
+  "name": "db-diff",
+  "version": "1.0.0",
+  "description": "A Node.js module for synchronizing two databases by identifying and creating missing tables, columns, and stored procedures.",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mssql": "^9.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethical-Ralph/db-diff.git"
+  },
+  "keywords": [
+    "database",
+    "synchronization",
+    "tables",
+    "columns",
+    "stored procedures",
+    "migration",
+    "SQL",
+    "MsSQL",
+    "database management"
+  ],
+  "author": "Ethical Ralph <rakinola90@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ethical-Ralph/db-diff/issues"
+  },
+  "homepage": "https://github.com/Ethical-Ralph/db-diff#readme"
+}
