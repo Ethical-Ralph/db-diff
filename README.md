@@ -64,14 +64,14 @@ The script generate two json files `tables.json` and `stored-p.json`
 ```json
 {
   "stats": {
-    // ... but in db1
+    ... but in db1
     "totalMissingTableInDb2": "number",
-    // ... but in db2
+    ... but in db2
     "totalMissingTableInDb1": "number",
-    // ... existing tables but missing colomns in both
+    ... existing tables but missing colomns in both
     "totalDifferenceBetweenDBs": "number"
   },
-  // missing table in db2 but in db1
+  missing table in db2 but in db1
   "missingTableInDb2": [
     {
       "schema_name": "string",
@@ -88,7 +88,7 @@ The script generate two json files `tables.json` and `stored-p.json`
     }
   ],
 
-  // missing table in db1 but in db2
+  missing table in db1 but in db2
   "missingTableInDb1": [
     {
       "schema_name": "string",
@@ -105,7 +105,7 @@ The script generate two json files `tables.json` and `stored-p.json`
     }
   ],
 
-  // tables that exist in both dbs but has missing columns based on the other db
+  tables that exist in both dbs but has missing columns based on the other db
   "existingTablesDifferences": [
     {
       "table_name": "string",
@@ -143,7 +143,7 @@ format:
     "totalMissingInDB1": "number",
     "totalExistInBothButUpdatedFunction": "number"
   },
-  // missing stored proceedure in db2 but available in db1
+  missing stored proceedure in db2 but available in db1
   "missingInDB2": [
     {
       "name": "string",
@@ -151,7 +151,7 @@ format:
     }
   ],
 
-  // missing stored proceedure in db1 but available in db2
+  missing stored proceedure in db1 but available in db2
   "missingInDB1": [
     {
       "name": "string",
@@ -159,7 +159,7 @@ format:
     }
   ],
 
-  // exising stored proceedure in both db but with differnt function
+  exising stored proceedure in both db but with differnt function
   "existInBothButUpdatedFunction": [
     {
       "name": "string",
